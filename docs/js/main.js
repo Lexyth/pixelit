@@ -170,6 +170,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
+    $(function () => {
+      $('pixelitcanvas').watermark({
+        path: 'assets/skyzinha.png'
+        gravity: 'c'
+      });
+    });
+
     greyscale.checked ? px.convertGrayscale() : null;
     palette.checked ? px.convertPalette() : null;
     maxheight.value ? px.setMaxHeight(maxheight.value).resizeImage() : null;
