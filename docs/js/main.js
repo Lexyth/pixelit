@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("drawto:");
     alert(px.drawto.toString());
     alert("DataUrl:");
-    alert(px.drawto.toDataUrl());
+    alert(px.drawto.toDataURL());
     alert("watermark:");
     alert(watermark.toString());
     alert("v19:29");
