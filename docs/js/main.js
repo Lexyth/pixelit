@@ -181,12 +181,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .image(watermark.image.lowerLeft(0.5))
       .then(img => {
         alert("in watermark");
-        alert("pixelitcanvas");
-        //document.getElementById("pixelitcanvas").drawImage(img,0,0);
         alert("pixelitcanvas context");
         document.getElementById("pixelitcanvas").getContext("2d").drawImage(img, 0, 0);
-        alert("drawto");
-        px.drawto.drawImage(img, 0, 0);
         alert("drawto context");
         px.drawto.getContext("2d").drawImage(img, 0, 0);
         alert("all drawn");
