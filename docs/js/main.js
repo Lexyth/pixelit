@@ -171,42 +171,11 @@ document.addEventListener("DOMContentLoaded", function () {
       .pixelate();
 
     alert("before watermark");
-    //alert(px.toString());
-    //alert("drawto:");
-    //alert(px.drawto.toString());
-    //alert("DataUrl:");
-    //alert(px.drawto.toDataURL());
-    //alert("watermark:");
-    //alert(watermark.toString());
-    alert("v20:51");
+    alert("v22:03");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
-      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));px.ctx.drawImage(img,0,0);alert("all drawn");});
-      //.then(img => {alert("in");px.ctx.drawImage(img,0,0);});
+      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");px.drawto.drawImage(img,0,0);alert("all drawn");});
     alert("after watermark");
-    //var image = new Image();
-    //image.id = "pic";
-    //image.src = px.ctx.toDataURL();
-
-    //let image = document.createElement('img');
-    //image.setAttribute('src', px.ctx.toDataUrl());
-
-    //alert("before");
-    //$(image).watermark({
-    //  path: 'assets/skyzinha.png',
-    //  gravity: 'c'
-    //}).done(function (imgURL) {
-    //  alert("adding water");
-    //  let water = document.createElement('img');
-    //  water.setAttribute('src', imgURL);
-    //  document.appendChild(water);
-    //  alert("appended water");
-      //let waterImg = new Image();
-      //waterImg.src = imgURL;
-      //waterImg.onload = function(){
-      //px.drawto.drawImage(waterImg, 0, 0);
-    //});
-    //alert("after");
 
     greyscale.checked ? px.convertGrayscale() : null;
     palette.checked ? px.convertPalette() : null;
