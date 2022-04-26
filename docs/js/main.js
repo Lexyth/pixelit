@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .pixelate();
 
     $(function () {
-      $('pixelitcanvas').watermark({
+      $('pixelitimg').watermark({
         path: 'assets/skyzinha.png'
         gravity: 'c'
       });
