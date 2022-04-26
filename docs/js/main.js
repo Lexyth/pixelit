@@ -170,28 +170,32 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
+      watermark([px.ctx.toDataUrl(), 'assets/208E3E1F-B6E7-4818-85F9-9C8C131EB482.png'])
+        .image(watermark.image.lowerRight(0.5))
+        .then(img => {document.getElementById('container').appendChild(img);document.getElementById("container").appendChild(document.createTextNode("This works"));});
+
     //var image = new Image();
     //image.id = "pic";
     //image.src = px.ctx.toDataURL();
 
-    let image = document.createElement('img');
-    image.setAttribute('src', px.ctx.toDataUrl());
+    //let image = document.createElement('img');
+    //image.setAttribute('src', px.ctx.toDataUrl());
 
     alert("before");
-    $(image).watermark({
-      path: 'assets/skyzinha.png',
-      gravity: 'c'
-    }).done(function (imgURL) {
-      alert("adding water");
-      let water = document.createElement('img');
-      water.setAttribute('src', imgURL);
-      document.appendChild(water);
-      alert("appended water");
+    //$(image).watermark({
+    //  path: 'assets/skyzinha.png',
+    //  gravity: 'c'
+    //}).done(function (imgURL) {
+    //  alert("adding water");
+    //  let water = document.createElement('img');
+    //  water.setAttribute('src', imgURL);
+    //  document.appendChild(water);
+    //  alert("appended water");
       //let waterImg = new Image();
       //waterImg.src = imgURL;
       //waterImg.onload = function(){
       //px.drawto.drawImage(waterImg, 0, 0);
-    });
+    //});
     alert("after");
 
     greyscale.checked ? px.convertGrayscale() : null;
