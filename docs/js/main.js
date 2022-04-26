@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var image = new Image();
     image.id = "pic";
-    image.src = px.drawto.toDataURL();
+    image.src = px.ctx.toDataURL();
 
     alert("before");
     $(image).watermark({
