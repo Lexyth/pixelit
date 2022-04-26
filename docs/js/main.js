@@ -170,10 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
+    alert("before");
     $('.pixelitimg').watermark({
       path: 'assets/skyzinha.png'
       gravity: 'c'
     });
+    alert("after");
 
     greyscale.checked ? px.convertGrayscale() : null;
     palette.checked ? px.convertPalette() : null;
