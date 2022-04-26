@@ -170,9 +170,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
-      watermark([px.ctx.toDataUrl(), 'assets/208E3E1F-B6E7-4818-85F9-9C8C131EB482.png'])
-        .image(watermark.image.lowerRight(0.5))
-        .then(img => {document.getElementById('container').appendChild(img);document.getElementById("container").appendChild(document.createTextNode("This works"));});
+    watermark([px.ctx.toDataUrl(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
+      .image(watermark.image.lowerRight(0.5))
+      .then(img => {document.getElementById('container').appendChild(img);document.getElementById("container").appendChild(document.createTextNode("This works"));});
 
     //var image = new Image();
     //image.id = "pic";
