@@ -172,8 +172,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     alert("before watermark");
     alert(px.toString());
-    alert(px.ctx.toString());
-    alert(px.ctx.toDataUrl().toString());
+    alert(px.drawto.toString());
+    alert(px.drawto.toDataUrl());
     alert(watermark.toString());
     alert("v18:49");
     //watermark([px.ctx.toDataUrl(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
