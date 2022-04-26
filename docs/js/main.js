@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .image(watermark.image.lowerLeft(0.5))
       .then(img => {
         alert("in watermark");
-        document.getElementById("watermarked").getContext("2d").drawImage(img, 0, 0);
+        document.getElementById("watermarked").replaceChildren(img);
       });
     alert("after watermark");
   };
