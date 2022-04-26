@@ -179,9 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("watermark:");
     alert(watermark.toString());
     alert("v19:29");
-    //watermark([px.ctx.toDataUrl(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
-    //  .image(watermark.image.lowerRight(0.5))
-    //  .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
+    watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
+      .image(watermark.image.lowerRight(0.5))
+      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
     alert("after watermark");
     //var image = new Image();
     //image.id = "pic";
