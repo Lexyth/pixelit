@@ -181,11 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .image(watermark.image.lowerLeft(0.5))
       .then(img => {
         alert("in watermark");
-        alert("pixelitcanvas context");
-        document.getElementById("pixelitcanvas").getContext("2d").drawImage(img, 0, 0);
-        alert("drawto context");
-        px.drawto.getContext("2d").drawImage(img, 0, 0);
-        alert("all drawn");
+        document.getElementById("watermarked").getContext("2d").drawImage(img, 0, 0);
       });
     alert("after watermark");
   };
