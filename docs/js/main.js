@@ -178,11 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //alert(px.drawto.toDataURL());
     //alert("watermark:");
     //alert(watermark.toString());
-    alert("v20:47");
+    alert("v20:51");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
-      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
-      //.then(img => {px.drawto.drawImage(img,0,0);});
+      //.then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
+      .then(img => {alert("in");px.ctx.drawImage(img,0,0);});
     alert("after watermark");
     //var image = new Image();
     //image.id = "pic";
