@@ -275,7 +275,6 @@
             img.src = data.imgurl;
         },
     });
-
     $.fn[pluginName] = function(options) {
         return this.each(function() {
             if (!$.data(this, 'plugin_' + pluginName)) {
