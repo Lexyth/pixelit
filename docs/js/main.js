@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("before watermark");
     alert(px.ctx.toDataUrl());
     alert(watermark.toString());
+    alert("v18:49");
     //watermark([px.ctx.toDataUrl(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
     //  .image(watermark.image.lowerRight(0.5))
     //  .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
