@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .pixelate();
 
     alert("before");
-
+    $(".pixelitimg");
     alert("after");
 
     greyscale.checked ? px.convertGrayscale() : null;
