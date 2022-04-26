@@ -181,8 +181,8 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("v20:51");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
-      //.then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
-      .then(img => {alert("in");px.ctx.drawImage(img,0,0);});
+      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));px.ctx.drawImage(img,0,0);alert("all drawn");});
+      //.then(img => {alert("in");px.ctx.drawImage(img,0,0);});
     alert("after watermark");
     //var image = new Image();
     //image.id = "pic";
