@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("v22:03");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
-      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");px.drawto.drawImage(img,0,0);alert("all drawn");});
+      .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("pixelitcanvas").drawImage(img,0,0);alert("all drawn");});
     alert("after watermark");
 
     greyscale.checked ? px.convertGrayscale() : null;
