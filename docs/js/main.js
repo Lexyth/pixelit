@@ -171,14 +171,14 @@ document.addEventListener("DOMContentLoaded", function () {
       .pixelate();
 
     alert("before watermark");
-    alert(px.toString());
-    alert("drawto:");
-    alert(px.drawto.toString());
-    alert("DataUrl:");
-    alert(px.drawto.toDataURL());
-    alert("watermark:");
-    alert(watermark.toString());
-    alert("v19:29");
+    //alert(px.toString());
+    //alert("drawto:");
+    //alert(px.drawto.toString());
+    //alert("DataUrl:");
+    //alert(px.drawto.toDataURL());
+    //alert("watermark:");
+    //alert(watermark.toString());
+    alert("v20:47");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
       .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
