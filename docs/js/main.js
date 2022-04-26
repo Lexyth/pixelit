@@ -170,11 +170,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
-    $(function () {
-      $('pixelitimg').watermark({
-        path: 'assets/skyzinha.png'
-        gravity: 'c'
-      });
+    $('.pixelitimg').watermark({
+      path: 'assets/skyzinha.png'
+      gravity: 'c'
     });
 
     greyscale.checked ? px.convertGrayscale() : null;
