@@ -170,12 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
-    var image = new Image();
-    image.id = "pic";
-    image.src = px.ctx.toDataURL();
+    //var image = new Image();
+    //image.id = "pic";
+    //image.src = px.ctx.toDataURL();
 
     alert("before");
-    $(image).watermark({
+    $(".pixelitimg").watermark({
       path: 'assets/skyzinha.png',
       gravity: 'c'
     });//.done(function (imgURL) {
