@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     maxwidth.value ? px.setMaxWidth(maxwidth.value).resizeImage() : null;
 
     alert("before watermark");
-    alert("v22:09");
+    alert("v23:25");
     watermark([px.drawto.toDataURL(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
       .image(watermark.image.lowerLeft(0.5))
       .then(img => {
