@@ -182,9 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
       path: 'assets/skyzinha.png',
       gravity: 'c'
     }).done(function (imgURL) {
+      alert("adding water");
       let water = document.createElement('img');
       water.setAttribute('src', imgURL);
       document.appendChild(water);
+      alert("appended water");
       //let waterImg = new Image();
       //waterImg.src = imgURL;
       //waterImg.onload = function(){
