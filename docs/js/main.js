@@ -172,10 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     alert("before watermark");
     alert(px.toString());
+    alert("drawto:");
     alert(px.drawto.toString());
+    alert("DataUrl:");
     alert(px.drawto.toDataUrl());
+    alert("watermark:");
     alert(watermark.toString());
-    alert("v18:49");
+    alert("v19:29");
     //watermark([px.ctx.toDataUrl(), 'assets/B4099C75-5E9E-427F-B896-58BC1BC7AC87.png'])
     //  .image(watermark.image.lowerRight(0.5))
     //  .then(img => {document.getElementById('container').appendChild(img);alert("in watermark");document.getElementById("container").appendChild(document.createTextNode("This works"));});
