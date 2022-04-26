@@ -181,12 +181,15 @@ document.addEventListener("DOMContentLoaded", function () {
     $(image).watermark({
       path: 'assets/skyzinha.png',
       gravity: 'c'
-    });//.done(function (imgURL) {
-      //var waterImg = new Image();
+    }).done(function (imgURL) {
+      let water = document.createElement('img');
+      water.setAttribute('src', imgURL);
+      document.appendChild(water);
+      //let waterImg = new Image();
       //waterImg.src = imgURL;
       //waterImg.onload = function(){
       //px.drawto.drawImage(waterImg, 0, 0);
-    //});
+    });
     alert("after");
 
     greyscale.checked ? px.convertGrayscale() : null;
