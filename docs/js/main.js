@@ -170,9 +170,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .draw()
       .pixelate();
 
-    //var image = new Image();
-    //image.id = "pic";
-    //image.src = px.ctx.toDataURL();
+    var image = new Image();
+    image.id = "pic";
+    image.src = px.ctx.toDataURL();
 
     alert("before");
     $(".pixelitimg").watermark({
